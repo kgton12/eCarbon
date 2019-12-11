@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página de Cadastro</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <p class="title-cad">Ficha de Cadastro</p>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nome</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">people</i>
+                        <input id="usuario" type="text" class="validate">
+                        <label for="usuario">Usuario</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">E-mail</label>
+                    </div>
+                </div>               
+            </form>
+            <a id="cad-ok" class="waves-effect waves-light btn cad-button-ok">Cadastrar</a>
+            <a id="" class="waves-effect waves-light btn cad-button-cancel" href="login.html">Cancelar</a>
+        </div>
+    </div>
+    <script src="js/cad.js"></script>
+</body>
+
+</html>

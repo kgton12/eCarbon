@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Área do Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="header-menu">
+        <a href="menu.html"><i class="material-icons voltar">arrow_back</i></a>
+        <h4>ECarbon</h4>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">search</i>
+                <input id="search" type="text" class="validate">
+                <label for="search">Procurar Por</label>
+            </div>
+            <div class="radio-group">
+                <p>
+                    <label>
+                        <input value="nome" class="with-gap" name="group1" type="radio" checked class="gradio" />
+                        <span>Nome</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input value="co2" class="with-gap" name="group1" type="radio" class="gradio" />
+                        <span>CO2</span>
+                    </label>
+                </p>
+                <a class="waves-effect waves-light btn" id="proc-ok">Pesquisar</a>
+            </div>
+        </div>
+        <div id="card-maquinas">
+            <!--<div class="row">
+                <div class="col s12 m6">
+                    <div class="card green darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Card Machine</span>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#"><i class="material-icons teste">delete_forever</i></a>
+                            <a href="#"><i class="material-icons teste">edit</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <script src="js/relMaq.js"></script>
+
+</body>
+
+</html>

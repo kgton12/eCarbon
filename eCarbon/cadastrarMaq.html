@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Área do Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <p class="title-cad">Cadastro de Maquinas</p>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="nome-maq" type="text" class="validate">
+                            <label for="Nome">Nome</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="marca-maq" type="text" class="validate">
+                            <label for="Marca">Marca</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="CO2-maq" type="text" class="validate">
+                            <label for="CO2">CO2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="volts">
+                                <option value="" disabled selected>110</option>
+                                <option value="1">110</option>
+                                <option value="2">220</option>
+                                <option value="3">outro</option>
+                            </select>
+                            <label>Selecione a Voltagem</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="tempfunc">
+                                <option value="" disabled selected>8</option>
+                                <option value="1">8</option>
+                                <option value="2">16</option>
+                                <option value="3">24</option>
+                            </select>
+                            <label>Tempo de Funcionamento(Hrs)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Comentário</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+                <a id="cad-ok" class="waves-effect waves-light btn cad-button-ok">Cadastrar</a>
+                <a id="" class="waves-effect waves-light btn cad-button-cancel" href="menu.html">Cancelar</a>
+            </div>
+        </div>
+        <script src="js/cadastrarMaq.js"></script>
+</body>
+
+</html>

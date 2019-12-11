@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="icons/material.css">
+  <link rel="stylesheet" href="css/include.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Área do Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="div_Format">
+        <div>
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div>
+            <p class="text-center text_Logo">LowCarbon</p>
+        </div>
+    </div>
+    <form>
+        <div class="form-group text-center botao_Tamanho">
+            <label for="exampleFormControlInput1">Equipamento</label>
+            <input type="email" class="form-control" id="equipmaento" placeholder="Máquina">
+        </div>
+        <div class="form-group text-center botao_Tamanho">
+            <label for="exampleFormControlInput1">Emissão de Co2</label>
+            <input type="email" class="form-control" id="equipamento" placeholder="Unidade em Co2e">
+        </div>
+        <div class="form-group text-center botao_Tamanho">
+            <label for="exampleFormControlSelect1">Voltagem</label>
+            <select class="form-control" id="voltagem">
+                <option>Bivolt</option>
+                <option>110V</option>
+                <option>220V</option>
+                <option>outros</option>
+            </select>
+        </div>
+        <div class="form-group text-center botao_Tamanho">
+            <label for="exampleFormControlSelect1">Tempo em Funcionamento por dia</label>
+            <select class="form-control" id="tempo">
+                <option>5 Horas</option>
+                <option>10 Horas</option>
+                <option>12 Horas</option>
+                <option>24 Horas</option>
+            </select>
+        </div>
+
+        <div class="form-group text-center botao_Tamanho">
+            <label for="exampleFormControlTextarea1">Comentários</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
+    <div>
+        <button type="button" class="btn btn-success botao_Add">Adicionar</button>
+    </div>
+    <div>
+        <a type="button" class="btn btn-danger botao_Del botao_cor" href="segunda.html">Cancelar</a>
+    </div>
+
+    <script>
+        $("#cadastrar").click(function () {
+            alert("teste");
+        });
+
+    </script>
+</body>
+
+</html>
